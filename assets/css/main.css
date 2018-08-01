@@ -2729,6 +2729,8 @@ input, select, textarea {
 
 			.spotlight .content {
 				width: 55%;
+				padding: 2em 4em 2em 4em;
+
 			}
 
 		}
@@ -2759,7 +2761,7 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			.spotlight .content {
-				padding: 3em 2em 1em 2em ;
+				padding: 3em 2em 3em 2em ;
 			}
 
 		}
