@@ -1,0 +1,92 @@
+h1, h2, h3, h4 {
+  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+}
+
+html,
+body {
+  font-family: $body-font;
+  line-height: 150%;
+  color: #111;
+  font-size: 1rem;
+}
+
+p {
+  color: $body-color;
+  font-size: 1rem;
+  line-height: 1.9375rem;
+  max-width: 42em;
+}
+
+h1, h2, h3, h4, h5, h6, a {
+  font-family: $site-font;
+}
+
+h1,
+.h1 {
+  font-size: $h1-size;
+  color: $body-color;
+  margin-bottom: 28px;
+  font-weight: 900;
+  line-height: 4.125rem;
+  @include for-phone-only {
+    font-size: $h3-size;
+  }
+}
+h2 {
+  font-size: $h2-size;
+  font-weight: normal;
+  margin-bottom: 25px;
+  line-height: 3.125rem;
+  &.h2--section-title {
+    font-size: $h1-size/2;
+    text-transform: uppercase;
+  }
+  span {
+    font-size: $h5-size;
+    display: block;
+    letter-spacing: 0.225em;
+    text-transform: uppercase;
+    font-family: $body-font;
+    font-weight: normal;
+    color: #a2a2a2;
+  }
+  @include for-phone-only {
+    font-size: $h3-content!important;
+  }
+  a {
+    font-weight: normal;
+    &:after {
+      font-size: 18px!important;
+      margin-left: 12px;
+      position: relative;
+      top: -1px;
+    }
+  }
+}
+h3 {
+  font-size: $h3-size;
+  @include for-phone-only {
+    font-size: $h4-size;
+  }
+  a {
+    font-weight: bold;
+    &:after {
+      font-size: 18px!important;
+      margin-left: 12px;
+      position: relative;
+      top: -1px;
+    }
+  }
+}
+a {
+  color: $red;
+  text-decoration: none;
+  &:hover {
+    color: darken($red, 15%)!important;
+  }
+}
+hr {
+  border-color: #c9c9c9;
+  margin-bottom: 4rem;
+}

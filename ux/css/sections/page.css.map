@@ -1,0 +1,1 @@
+{"version":3,"sources":["sections/page.scss"],"names":[],"mappings":"AAAA;EACE,8FAAmE;EAAnE,oEAAmE,EACpE","file":"page.css","sourcesContent":["#header {\n  background-image: linear-gradient(to top, #37ecba 0%, #72afd3 100%);\n}\n"]}

@@ -1,0 +1,26 @@
+.js {
+  // function
+  .revealer {
+    @include revealer;
+  &.revealed {
+    @include revealed;
+    }
+  }
+
+  // direction
+  .revealer--side-left {
+    @include revealer--side-left;
+  }
+  .revealer--side-right {
+    @include revealer--side-right;
+  }
+  .revealer--up {
+    @include revealer--up;
+  }
+  .revealer--enlarge {
+    @include revealer--enlarge;
+  }
+  .revealer--fade {
+    @include revealer--fade;
+  }
+}

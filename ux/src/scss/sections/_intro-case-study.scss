@@ -1,0 +1,16 @@
+#one {
+  // padding-top: 150px;
+  padding-bottom: 40px;
+}
+.banner--region {
+  background: url('../images/podistbanner.jpg') no-repeat 0 0;
+  min-height: 488px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-size: 120%;
+  .h1 {
+    color: #fff;
+    text-shadow: 3px 3px 3px #000;
+  }
+}

@@ -1,0 +1,146 @@
+/* ==========================================================================
+   Mobile mixins
+   ========================================================================== */
+ @mixin uikit-mobile-break {
+   @media (max-width: 766px) { @content; }
+ }
+
+@mixin for-phone-only {
+  @media (max-width: 599px) { @content; }
+}
+
+@mixin for-tablet-portrait-up {
+  @media (min-width: 600px) { @content; }
+}
+
+@mixin for-tablet-landscape-up {
+  @media (min-width: 900px) { @content; }
+}
+
+@mixin for-desktop-up {
+  @media (min-width: 1200px) { @content; }
+}
+
+@mixin for-big-desktop-up {
+  @media (min-width: 1800px) { @content; }
+}
+
+@mixin for-tablet-landscape-down {
+  @media (max-width: 991px) { @content; }
+}
+
+/* ==========================================================================
+   margin-spacing
+   ========================================================================== */
+
+   @mixin margin-small-space {
+     margin: 20px 0;
+   }
+   @mixin margin-medium-space {
+     margin: 50px 0;
+   }
+   @mixin margin-large-space {
+     margin: 75px 0;
+   }
+
+
+/* ==========================================================================
+   3 x 3
+   ========================================================================== */
+
+@mixin flex-box-row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+@mixin flex-box-row-col {
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  max-width: 100%;
+  @include uikit-mobile-break {
+    flex: none;
+    width: 100%;
+  }
+
+}
+
+
+/* ==========================================================================
+   Icons
+   ========================================================================== */
+
+
+@mixin make-me-an-icon {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+@mixin container {
+  width: 100%;
+  margin: 60px auto 30px;
+  @media (max-width: 991px) {
+    box-sizing: content-box;
+  }
+}
+
+
+@mixin revealer {
+  opacity: 0;
+  transform: scale(1);
+	-moz-transition: opacity 2s ease-out, -moz-transform 2s ease-out;
+	-webkit-transition: opacity 2s ease-out, -webkit-transform 2s ease-out;
+	-ms-transition: opacity 2s ease-out, -ms-transform 2s ease-out;
+	transition: opacity 2s ease-out, transform 2s ease-out;
+}
+@mixin revealed {
+  opacity: 1!important;
+  -moz-transform: translateY(0rem)!important;
+  -webkit-transform: translateY(0rem)!important;
+  -ms-transform: translateY(0rem)!important;
+  transform: translateY(0rem)!important;
+  -moz-transform: translateX(0rem)!important;
+  -webkit-transform: translateX(0rem)!important;
+  -ms-transform: translateX(0rem)!important;
+  transform: translateX(0rem)!important;
+}
+@mixin revealer--side-left {
+  -moz-transform: translateX(-2rem);
+  -webkit-transform: translateX(-2rem);
+  -ms-transform: translateX(-2rem);
+  transform: translateX(-2rem);
+}
+@mixin revealer--side-right {
+  -moz-transform: translateX(2rem);
+  -webkit-transform: translateX(2rem);
+  -ms-transform: translateX(2rem);
+  transform: translateX(2rem);
+}
+@mixin revealer--up {
+  -moz-transform: translateY(2.5rem);
+  -webkit-transform: translateY(2.5rem);
+  -ms-transform: translateY(2.5rem);
+  transform: translateY(2.5rem);
+  transition-delay: .2s;
+}
+@mixin revealer--enlarge {
+  transform: scale(0.5);
+  transition: all 2s ease-in-out; 
+}
+@mixin revealer--fade {
+  opacity: 0!important;
+}
