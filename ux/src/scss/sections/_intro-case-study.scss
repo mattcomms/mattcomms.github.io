@@ -4,11 +4,22 @@
 }
 .banner--region {
   background: url('../images/podistbanner.jpg') no-repeat 0 0;
-  min-height: 488px;
+  min-height: 188px;
   display: flex;
   align-items: center;
   width: 100%;
   background-size: 120%;
+  @media (min-width: 1000px) {
+    min-height: 488px;
+  }
+  @media (min-width: 767px) {
+    min-height: 388px;
+  }
+  @media (min-width: 574px) {
+    min-height: 288px;
+  }
+
+
   .h1 {
     color: #fff;
     text-shadow: 3px 3px 3px #000;

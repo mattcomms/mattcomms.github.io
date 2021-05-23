@@ -19,8 +19,10 @@ p {
 }
 
 p.bigger--text {
-  font-size: 1.5rem;
-  line-height: 3rem;
+  @media (min-width: 576px) {
+    font-size: 1.5rem;
+    line-height: 3rem;
+  }
 }
 
 
@@ -48,6 +50,19 @@ h2 {
     font-size: $h1-size;
     // text-transform: uppercase;
     margin-bottom: 55px;
+    -webkit-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone;
+    background-color: #383A59;
+    background-image: linear-gradient(43deg, #383A59 0%, #9580FF 6%, #40E38B 30%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    line-height: 1em;
+    @include for-phone-only {
+      font-size: 60px;
+    }
+    span {
+      line-height: 1.2em;
+    }
   }
   span {
     font-size: $h5-size;
@@ -59,7 +74,7 @@ h2 {
     color: #a2a2a2;
   }
   @include for-phone-only {
-    font-size: $h3-content!important;
+    font-size: 38px;
   }
   a {
     font-weight: normal;
@@ -76,6 +91,7 @@ h3 {
   font-weight: normal;
   margin-bottom: 25px;
   line-height: 3.125rem;
+
   span {
     font-size: $h5-size;
     display: block;
@@ -103,6 +119,7 @@ h3 {
 }
 h4, .h4 {
   text-transform: uppercase;
+
 }
 a {
   color: $red;
@@ -112,8 +129,8 @@ a {
   }
 }
 hr {
-  border-color: #c9c9c9;
-  margin-bottom: 4rem;
+  border-color: #fff;
+  margin: 3rem 0;
 }
 
 .center {
@@ -128,7 +145,9 @@ hr {
   margin-left: 0;
   padding-left: 0;
   &.thin--list {
-    max-width: 250px;
+    @media (min-width: 576px) {
+      max-width: 250px;
+    }
   }
   li {
     margin-left: 0;
@@ -140,8 +159,41 @@ hr {
   }
 }
 
+.inline--list {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+  li {
+    margin-left: 0;
+    display: inline-block;
+    padding: 10px 20px;
+    border-right: 1px solid #ccc;
+    &:last-child {
+      border-right: none!important;
+    }
+  }
+
+}
+
 .nice-list {
   li {
     margin-bottom: 20px;
   }
+}
+a {
+  .click-to-enlarge {
+    text-align: center;
+    font-weight: normal!important;
+    display: block;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+}
+
+.no-border li {
+  border: none;
+}
+
+footer p {
+  max-width: 100%;
 }
