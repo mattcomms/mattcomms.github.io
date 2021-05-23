@@ -58,6 +58,9 @@
     padding-right: calc(var(--bs-gutter-x) / 2);
     padding-left: calc(var(--bs-gutter-x) / 2);
     margin-top: var(--bs-gutter-y); }
+.wider-row {
+  @include wider-row;
+}
 
 .col {
   -webkit-box-flex: 1;
@@ -3614,5 +3617,9 @@
     display: inline-flex !important; }
   .d-print-none {
     display: none !important; } }
+
+.no-gutters {
+  padding: 0;
+}
 
 /*# sourceMappingURL=bootstrap-grid.css.map */

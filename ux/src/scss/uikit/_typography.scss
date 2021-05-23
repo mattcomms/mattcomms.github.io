@@ -18,6 +18,12 @@ p {
   max-width: 42em;
 }
 
+p.bigger--text {
+  font-size: 1.5rem;
+  line-height: 3rem;
+}
+
+
 h1, h2, h3, h4, h5, h6, a {
   font-family: $site-font;
 }
@@ -39,8 +45,9 @@ h2 {
   margin-bottom: 25px;
   line-height: 3.125rem;
   &.h2--section-title {
-    font-size: $h1-size/2;
-    text-transform: uppercase;
+    font-size: $h1-size;
+    // text-transform: uppercase;
+    margin-bottom: 55px;
   }
   span {
     font-size: $h5-size;
@@ -66,6 +73,21 @@ h2 {
 }
 h3 {
   font-size: $h3-size;
+  font-weight: normal;
+  margin-bottom: 25px;
+  line-height: 3.125rem;
+  span {
+    font-size: $h5-size;
+    display: block;
+    letter-spacing: 0.225em;
+    text-transform: uppercase;
+    font-family: $body-font;
+    font-weight: normal;
+    color: #a2a2a2;
+    margin-bottom: 10px;
+    line-height: 1rem;
+  }
+
   @include for-phone-only {
     font-size: $h4-size;
   }
@@ -79,6 +101,9 @@ h3 {
     }
   }
 }
+h4, .h4 {
+  text-transform: uppercase;
+}
 a {
   color: $red;
   text-decoration: none;
@@ -89,4 +114,34 @@ a {
 hr {
   border-color: #c9c9c9;
   margin-bottom: 4rem;
+}
+
+.center {
+  text-align: center;
+}
+
+
+
+// List
+.no-list--stacked {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+  &.thin--list {
+    max-width: 250px;
+  }
+  li {
+    margin-left: 0;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ccc;
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}
+
+.nice-list {
+  li {
+    margin-bottom: 20px;
+  }
 }

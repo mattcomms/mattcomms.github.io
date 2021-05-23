@@ -139,8 +139,12 @@
 }
 @mixin revealer--enlarge {
   transform: scale(0.5);
-  transition: all 2s ease-in-out; 
+  transition: all 2s ease-in-out;
 }
 @mixin revealer--fade {
   opacity: 0!important;
+}
+
+@mixin wider-row {
+  max-width: 1400px;
 }

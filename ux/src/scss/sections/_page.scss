@@ -2,21 +2,24 @@ body {
   margin: 0;
   font-family: 'Lato', sans-serif;
   font-family: 'Open Sans', sans-serif;
+  image-rendering: -webkit-optimize-contrast;
 }
 
-
-
 .wrapper {
+  margin-top: 100px;
+  &#one {
+    margin-top: 0!important;
+    padding-bottom: 0;
+  }
   .row {
     max-width: 1200px;
     margin: 30px auto;
   }
+  .row--wide {
+    @include wider-row;
+  }
 }
 
-img {
-  image-rendering: -moz-crisp-edges; /* Firefox */
-  image-rendering: -o-crisp-edges; /* Opera */
-  image-rendering: -webkit-optimize-contrast; /* Webkit (non-standard naming) */
-  image-rendering: crisp-edges;
-  -ms-interpolation-mode: nearest-neighbor; /* IE (non-standard property) */
+.align--middle {
+  align-items: center;
 }

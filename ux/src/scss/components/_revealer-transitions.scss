@@ -24,3 +24,14 @@
     @include revealer--fade;
   }
 }
+
+
+.revealer.r-2 {
+	transition-delay: .5s;
+}
+.revealer.r-3 {
+	transition-delay: 1s;
+}
+.revealer.r-4 {
+	transition-delay: 1.5s;
+}

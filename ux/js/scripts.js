@@ -1,5 +1,7 @@
 (function($) {
+
   // revealContent //
+
   var withinViewport = (function() {
 
     'use strict';
