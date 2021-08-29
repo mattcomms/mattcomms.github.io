@@ -115,7 +115,7 @@ body {
           animation: float 6s ease-in-out infinite; }
 
 #mausoleum {
-  padding: 100px 0;
+  padding: 150px 0;
   position: relative;
   overflow: hidden; }
   @media (min-width: 767px) {
@@ -189,6 +189,67 @@ body {
           transform: translatey(0px);
   -webkit-animation: float 6s ease-in-out infinite;
           animation: float 6s ease-in-out infinite; }
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion--group {
+  margin: 40px auto; }
+
+.accordion {
+  background-color: #eee;
+  color: #fff;
+  background: #231F20;
+  border-bottom: 1px solid #fff;
+  cursor: pointer;
+  padding: 28px 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  font-size: 27px;
+  display: block; }
+  .accordion:hover {
+    color: #ee582e !important;
+    background: #231F20 !important;
+    cursor: pointer; }
+  .accordion:after {
+    content: '\02795';
+    font-size: 25px;
+    background: #231F20 !important;
+    float: right;
+    margin-left: 5px;
+    color: #783187 !important; }
+  .accordion.active:after {
+    content: "\2796"; }
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active {
+  color: #fff;
+  background: #231F20 !important; }
+
+.active:focus {
+  color: #fff;
+  background: #231F20 !important; }
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 0.2s ease-out;
+  transition: max-height 0.2s ease-out;
+  background: #231F20;
+  border-bottom: 1px solid #4e4e4e; }
+  .panel p {
+    font-size: 1.2em;
+    line-height: 2em;
+    margin-bottom: 40px; }
+    .panel p:first-child {
+      margin-top: 0; }
+    .panel p:last-child {
+      margin-bottom: 40px; }
 
 /*!
  * Bootstrap Grid v5.0.1 (https://getbootstrap.com/)
@@ -3958,6 +4019,9 @@ img {
   .roadmap--item p {
     line-height: 2.5rem; }
 
+.roadmap--items {
+  margin-top: 40px; }
+
 .roadmap--image img {
   border-radius: 20px; }
 
@@ -3965,6 +4029,67 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion--group {
+  margin: 40px auto; }
+
+.accordion {
+  background-color: #eee;
+  color: #fff;
+  background: #231F20;
+  border-bottom: 1px solid #fff;
+  cursor: pointer;
+  padding: 28px 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  font-size: 27px;
+  display: block; }
+  .accordion:hover {
+    color: #ee582e !important;
+    background: #231F20 !important;
+    cursor: pointer; }
+  .accordion:after {
+    content: '\02795';
+    font-size: 25px;
+    background: #231F20 !important;
+    float: right;
+    margin-left: 5px;
+    color: #783187 !important; }
+  .accordion.active:after {
+    content: "\2796"; }
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active {
+  color: #fff;
+  background: #231F20 !important; }
+
+.active:focus {
+  color: #fff;
+  background: #231F20 !important; }
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 0.2s ease-out;
+  transition: max-height 0.2s ease-out;
+  background: #231F20;
+  border-bottom: 1px solid #4e4e4e; }
+  .panel p {
+    font-size: 1.2em;
+    line-height: 2em;
+    margin-bottom: 40px; }
+    .panel p:first-child {
+      margin-top: 0; }
+    .panel p:last-child {
+      margin-bottom: 40px; }
 
 /*!
  * Bootstrap Grid v5.0.1 (https://getbootstrap.com/)
@@ -7711,6 +7836,9 @@ img {
   .roadmap--item p {
     line-height: 2.5rem; }
 
+.roadmap--items {
+  margin-top: 40px; }
+
 .roadmap--image img {
   border-radius: 20px; }
 
@@ -7742,8 +7870,7 @@ body {
 p {
   color: #fff;
   font-size: 1rem;
-  line-height: 1.9375rem;
-  max-width: 42em; }
+  line-height: 1.9375rem; }
 
 @media (min-width: 576px) {
   .large-text p,
@@ -7767,11 +7894,17 @@ h1,
       font-size: 33px; } }
 
 h2 {
-  font-size: 47px;
+  font-size: 57px;
   font-weight: normal;
   margin-bottom: 25px;
   line-height: 3.125rem;
-  font-family: 'Bangers', cursive; }
+  font-family: 'Bangers', cursive;
+  -webkit-text-fill-color: transparent;
+  -webkit-box-decoration-break: clone;
+  background-color: #383A59;
+  background-image: linear-gradient(43deg, #ee582e 0%, #783187 50%);
+  -webkit-background-clip: text;
+  background-clip: text; }
   h2.h2--section-title {
     font-size: 80px;
     margin-bottom: 55px;
