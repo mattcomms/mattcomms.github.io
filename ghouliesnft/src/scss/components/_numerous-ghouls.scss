@@ -27,7 +27,8 @@
 .ghoulies-list {
   .ghoul {
     display: inline-block;
-    width: 33.333%;
+    width: 41.333%;
+    margin-right: -20%;
     &.revealed {
     animation-name: bounce;
     animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
@@ -38,9 +39,9 @@
     }
   }
   .ghoul--2 {
-    animation-delay: .25s;
+    animation:fadein -.25s 2s;
   }
   .ghoul--3 {
-    animation-delay: .5s;
+    animation:fadein -.5s 2s;
   }
 }

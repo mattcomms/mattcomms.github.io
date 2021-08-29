@@ -1,0 +1,11 @@
+#specs .specs--images {
+  background: url("../images/specs-bg.png") no-repeat center center;
+  background-size: cover; }
+
+#specs .floater {
+  -webkit-transform: translatey(0px);
+          transform: translatey(0px);
+  -webkit-animation: float 6s ease-in-out infinite;
+          animation: float 6s ease-in-out infinite; }
+
+/*# sourceMappingURL=specs.css.map */
