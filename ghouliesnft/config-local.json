@@ -1,0 +1,6 @@
+{
+  "name": "globalaus",
+  "description": "globalaus theme local config file.",
+  "browserSyncProxy" : "https://new-weave.lndo.site:4433/mattcomms.github.io/ux.html",
+  "browserSyncPort" : 4433
+}

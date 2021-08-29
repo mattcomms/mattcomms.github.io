@@ -1,0 +1,41 @@
+.js {
+  // function
+  .revealer {
+    @include revealer;
+  &.revealed {
+    @include revealed;
+    }
+  }
+
+  // direction
+  .revealer--side-left {
+    @include revealer--side-left;
+  }
+  .revealer--side-right {
+    @include revealer--side-right;
+  }
+  .revealer--up {
+    @include revealer--up;
+  }
+  .revealer--enlarge {
+    @include revealer--enlarge;
+  }
+  .revealer--fade {
+    @include revealer--fade;
+  }
+}
+
+
+.revealer.r-2 {
+	transition-delay: .5s;
+}
+.revealer.r-3 {
+	transition-delay: 1s;
+}
+.revealer.r-4 {
+	transition-delay: 1.5s;
+}
+
+.js .revealer.ghoul {
+  opacity: 1!important;
+}
