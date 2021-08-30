@@ -1,6 +1,8 @@
 #mausoleum {
+  background: url('../images/mausoleum.jpg') no-repeat center center;
+  background-size: cover;
   @media (min-width: 767px) {
-    background: url('../images/mausoleum.jpg') no-repeat left center;
+    background-position: left center;
     background-size: 50%;
   }
   padding: 150px 0;

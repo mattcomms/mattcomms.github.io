@@ -1,7 +1,13 @@
 #hero {
-  @media (min-width: 767px) {
-    background: url('../images/hero.jpg') no-repeat right center;
+  background: url('../images/hero.jpg') no-repeat center center;
+  background-size: cover;
+  @media (min-width: 575px) {
+    background-position: right center;
     background-size: 50%;
+  }
+  @media (max-width: 575px) {
+    text-shadow: 1px 1px 1px #000;
+    padding: 50px 0;
   }
   .inner {
     position: relative;
@@ -13,18 +19,24 @@
     display: block !important;
     position: absolute;
     z-index: 1;
-    left: 50%;
+    left: 0;
     top: 0 !important;
-    opacity: 1;
-    width: 50% !important;
     height: 100vh !important;
     border: none !important;
-    background: black;
+    opacity: .6;
     background: rgb(35,31,32);
-    background: -moz-linear-gradient(90deg, rgba(35,31,32,1) 0%, rgba(35,31,32,0) 30%);
-    background: -webkit-linear-gradient(90deg, rgba(35,31,32,1) 0%, rgba(35,31,32,0) 30%);
-    background: linear-gradient(90deg, rgba(35,31,32,1) 0%, rgba(35,31,32,0) 30%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#231f20",endColorstr="#231f20",GradientType=1);
+    width: 100% !important;
+    @media (min-width: 575px) {
+      left: 50%;
+      opacity: 1;
+      width: 50% !important;
+      background: black;
+      background: rgb(35,31,32);
+      background: -moz-linear-gradient(90deg, rgba(35,31,32,1) 0%, rgba(35,31,32,0) 30%);
+      background: -webkit-linear-gradient(90deg, rgba(35,31,32,1) 0%, rgba(35,31,32,0) 30%);
+      background: linear-gradient(90deg, rgba(35,31,32,1) 0%, rgba(35,31,32,0) 30%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#231f20",endColorstr="#231f20",GradientType=1);
+    }
   }
   overflow: hidden;
 
@@ -46,7 +58,11 @@
 
   }
   .display-text {
-    margin: 50px 0;
-    font-size: 6.125rem;
+    @media (max-width: 767px) {
+      text-align: center;
+      margin: 20px 0!important;
+      font-size: $h3-size!important;
+      line-height: 3rem;
+    }
   }
 }

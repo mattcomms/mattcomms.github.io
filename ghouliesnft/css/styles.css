@@ -37,12 +37,18 @@ body {
    Icons
    ========================================================================== */
 #hero {
+  background: url("../images/hero.jpg") no-repeat center center;
+  background-size: cover;
   position: relative;
   overflow: hidden; }
-  @media (min-width: 767px) {
+  @media (min-width: 575px) {
     #hero {
-      background: url("../images/hero.jpg") no-repeat right center;
+      background-position: right center;
       background-size: 50%; } }
+  @media (max-width: 575px) {
+    #hero {
+      text-shadow: 1px 1px 1px #000;
+      padding: 50px 0; } }
   #hero .inner {
     position: relative;
     z-index: 2; }
@@ -51,17 +57,23 @@ body {
     display: block !important;
     position: absolute;
     z-index: 1;
-    left: 50%;
+    left: 0;
     top: 0 !important;
-    opacity: 1;
-    width: 50% !important;
     height: 100vh !important;
     border: none !important;
-    background: black;
+    opacity: .6;
     background: #231f20;
-    background: -webkit-gradient(linear, left top, right top, from(#231f20), color-stop(30%, rgba(35, 31, 32, 0)));
-    background: linear-gradient(90deg, #231f20 0%, rgba(35, 31, 32, 0) 30%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#231f20",endColorstr="#231f20",GradientType=1); }
+    width: 100% !important; }
+    @media (min-width: 575px) {
+      #hero:before {
+        left: 50%;
+        opacity: 1;
+        width: 50% !important;
+        background: black;
+        background: #231f20;
+        background: -webkit-gradient(linear, left top, right top, from(#231f20), color-stop(30%, rgba(35, 31, 32, 0)));
+        background: linear-gradient(90deg, #231f20 0%, rgba(35, 31, 32, 0) 30%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#231f20",endColorstr="#231f20",GradientType=1); } }
   #hero > .row {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -74,9 +86,12 @@ body {
     margin: 0 auto; }
   #hero .banner--text {
     padding: 20px; }
-  #hero .display-text {
-    margin: 50px 0;
-    font-size: 6.125rem; }
+  @media (max-width: 767px) {
+    #hero .display-text {
+      text-align: center;
+      margin: 20px 0 !important;
+      font-size: 33px !important;
+      line-height: 3rem; } }
 
 @-webkit-keyframes float {
   0% {
@@ -100,10 +115,22 @@ body {
     -webkit-transform: translatey(0px);
             transform: translatey(0px); } }
 
+@media (max-width: 575px) {
+  #book {
+    padding: 20px;
+    z-index: 2;
+    position: relative; } }
+
 #book .row {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
+  @media (max-width: 575px) {
+    #book .row {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: reverse;
+          -ms-flex-direction: column-reverse;
+              flex-direction: column-reverse; } }
 
 #book .ghoulies-book {
   position: relative;
@@ -113,49 +140,11 @@ body {
           transform: translatey(0px);
   -webkit-animation: float 6s ease-in-out infinite;
           animation: float 6s ease-in-out infinite; }
-
-.large-text .founder--item,
-.founder--item {
-  margin-bottom: 60px; }
-  .large-text .founder--item p,
-  .founder--item p {
-    line-height: 2.5rem; }
-
-.founder--name {
-  font-family: 'Bangers', cursive;
-  font-size: 1.5rem !important;
-  margin-bottom: 0 !important; }
-
-.founder--items {
-  margin-top: 40px; }
-
-.project--title {
-  font-style: italic;
-  font-size: 16px !important;
-  margin-top: 0px !important; }
-
-.founder--image {
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
-  padding: 5px;
-  background: #ee582e;
-  background: -webkit-gradient(linear, left top, right top, from(#ee582e), to(#783187));
-  background: linear-gradient(90deg, #ee582e 0%, #783187 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ee582e",endColorstr="#783187",GradientType=1);
-  border-radius: 200px; }
-  .founder--image img {
-    display: block;
-    -webkit-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
-    border-radius: 200px; }
-
-.founder--links {
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out; }
-  .founder--links:hover {
-    cursor: pointer; }
-    .founder--links:hover .founder--image {
-      background: #2eee80; }
+  @media (max-width: 575px) {
+    #book .ghoulies-book {
+      -webkit-animation: none;
+              animation: none;
+      bottom: 0; } }
 
 #header #logo {
   max-width: 300px;
@@ -165,12 +154,14 @@ body {
   display: block; }
 
 #mausoleum {
+  background: url("../images/mausoleum.jpg") no-repeat center center;
+  background-size: cover;
   padding: 150px 0;
   position: relative;
   overflow: hidden; }
   @media (min-width: 767px) {
     #mausoleum {
-      background: url("../images/mausoleum.jpg") no-repeat left center;
+      background-position: left center;
       background-size: 50%; } }
   #mausoleum .inner {
     position: relative;
@@ -212,6 +203,12 @@ body {
   background: -webkit-gradient(linear, left top, right top, from(#ee582e), to(#783187));
   background: linear-gradient(90deg, #ee582e 0%, #783187 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ee582e",endColorstr="#783187",GradientType=1); }
+  @media (max-width: 575px) {
+    #numerous-ghouls {
+      top: -100px;
+      position: relative;
+      z-index: 1;
+      padding: 20px; } }
   #numerous-ghouls .row {
     -webkit-box-align: end;
         -ms-flex-align: end;
@@ -269,6 +266,11 @@ body {
   display: inline-block;
   width: 41.333%;
   margin-right: -20%; }
+  @media (max-width: 575px) {
+    .ghoulies-list .ghoul {
+      -webkit-animation: none;
+              animation: none;
+      width: 47.333%; } }
   .ghoulies-list .ghoul.revealed {
     -webkit-animation-name: bounce;
             animation-name: bounce;
@@ -309,6 +311,49 @@ body {
           transform: translatey(0px);
   -webkit-animation: float 6s ease-in-out infinite;
           animation: float 6s ease-in-out infinite; }
+
+.large-text .founder--item,
+.founder--item {
+  margin-bottom: 60px; }
+  .large-text .founder--item p,
+  .founder--item p {
+    line-height: 2.5rem; }
+
+.founder--name {
+  font-family: 'Bangers', cursive;
+  font-size: 1.5rem !important;
+  margin-bottom: 0 !important; }
+
+.founder--items {
+  margin-top: 40px; }
+
+.project--title {
+  font-style: italic;
+  font-size: 16px !important;
+  margin-top: 0px !important; }
+
+.founder--image {
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  padding: 5px;
+  background: #ee582e;
+  background: -webkit-gradient(linear, left top, right top, from(#ee582e), to(#783187));
+  background: linear-gradient(90deg, #ee582e 0%, #783187 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ee582e",endColorstr="#783187",GradientType=1);
+  border-radius: 600px; }
+  .founder--image img {
+    display: block;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    border-radius: 600px; }
+
+.founder--links {
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out; }
+  .founder--links:hover {
+    cursor: pointer; }
+    .founder--links:hover .founder--image {
+      background: #2eee80; }
 
 #youtube {
   padding: 100px 0; }
@@ -7820,7 +7865,14 @@ img {
 h1.display-text {
   font-family: 'Bangers', cursive;
   color: #fff;
-  line-height: 6rem; }
+  line-height: 6rem;
+  margin: 50px 0;
+  font-size: 6.125rem; }
+  @media (max-width: 767px) {
+    h1.display-text {
+      margin: 20px 0 !important;
+      font-size: 33px !important;
+      line-height: 3rem; } }
   h1.display-text span {
     font-family: Helvetica,Arial,sans-serif;
     font-size: 33px;
@@ -7828,6 +7880,11 @@ h1.display-text {
     clear: both;
     display: block;
     font-weight: normal; }
+    @media (max-width: 767px) {
+      h1.display-text span {
+        text-align: center;
+        margin: 0px 0 !important;
+        font-size: 27px !important; } }
 
 html,
 body {
@@ -7862,6 +7919,11 @@ h1,
     h1,
     .h1 {
       font-size: 33px; } }
+  @media (min-width: 767px) {
+    h1,
+    .h1 {
+      font-size: 57px;
+      line-height: 2.125rem; } }
 
 h2 {
   font-size: 57px;

@@ -2,6 +2,13 @@ h1.display-text {
   font-family: 'Bangers', cursive;
   color: #fff;
   line-height: 6rem;
+  margin: 50px 0;
+  font-size: 6.125rem;
+  @media (max-width: 767px) {
+    margin: 20px 0!important;
+    font-size: $h3-size!important;
+    line-height: 3rem;
+  }
   span {
     font-family: Helvetica,Arial,sans-serif;
     font-size: $h3-size;
@@ -9,6 +16,12 @@ h1.display-text {
     clear: both;
     display: block;
     font-weight: normal;
+    @media (max-width: 767px) {
+      text-align: center;
+      margin: 0px 0!important;
+      font-size: $h4-size!important;
+    }
+
   }
 }
 
@@ -49,6 +62,10 @@ h1,
   line-height: 4.125rem;
   @include for-phone-only {
     font-size: $h3-size;
+  }
+  @media (min-width: 767px) {
+    font-size: $h2-size;
+    line-height: 2.125rem;
   }
 }
 h2 {

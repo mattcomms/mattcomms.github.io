@@ -1,6 +1,6 @@
 {
-  "name": "globalaus",
-  "description": "globalaus theme local config file.",
-  "browserSyncProxy" : "https://new-weave.lndo.site:4433/mattcomms.github.io/ux.html",
+  "name": "ghouliesnft",
+  "description": "ghouliesnft theme local config file.",
+  "browserSyncProxy" : "",
   "browserSyncPort" : 4433
 }

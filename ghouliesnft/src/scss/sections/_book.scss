@@ -13,8 +13,17 @@
 
 
 #book {
+  @media (max-width: 575px) {
+    padding: 20px;
+    z-index: 2;
+    position: relative;
+  }
+
   .row {
     align-items: center;
+    @media (max-width: 575px) {
+      flex-direction: column-reverse;
+    }
   }
   .ghoulies-book {
     position: relative;
@@ -22,5 +31,9 @@
     opacity: 1!important;
     transform: translatey(0px);
   	animation: float 6s ease-in-out infinite;
+    @media (max-width: 575px) {
+      animation: none;
+      bottom: 0;
+    }
   }
 }
