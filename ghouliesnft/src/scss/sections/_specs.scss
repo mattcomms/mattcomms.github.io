@@ -1,10 +1,9 @@
-#specs {
 
+#specs {
   .specs--images {
     background: url('../images/specs-bg.png') no-repeat center center;
     background-size: cover;
   }
-
   .floater {
     transform: translatey(0px);
     animation: float 6s ease-in-out infinite;
