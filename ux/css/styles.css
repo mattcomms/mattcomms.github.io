@@ -3964,6 +3964,9 @@ body {
   font-family: 'Open Sans', sans-serif;
   image-rendering: -webkit-optimize-contrast; }
 
+.presentation .wrapper {
+  margin-top: 350px; }
+
 .wrapper {
   margin-top: 100px; }
   .wrapper#one {
@@ -3974,6 +3977,8 @@ body {
     margin: 30px auto; }
   .wrapper .row--wide {
     max-width: 1400px; }
+  .wrapper .fullwidth {
+    max-width: 100%; }
 
 .align--middle {
   -webkit-box-align: center;
@@ -3989,6 +3994,12 @@ footer {
   border-top: 1px solid #ccc;
   margin-top: 140px;
   padding-bottom: 140px; }
+
+.presentation .pres--hide {
+  display: none; }
+
+.presentation #two {
+  margin: 300px 0; }
 
 #two .row {
   -webkit-box-align: center;
