@@ -120,10 +120,22 @@
   margin-top: 0;
   @media (max-width: 991px) {
     text-align: center;
+    display: block;
   }
   .nav-item {
     @media (max-width: 991px) {
-      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    &.nav-icon {
+      @media (max-width: 991px) {
+        display: inline-block;
+        margin: 20px;
+        border: none!important;
+      }
+    }
+    &.nav-btn {
+      @media (max-width: 991px) {
+        border: none!important;
+      }
     }
   }
 }
@@ -561,7 +573,7 @@
 }
 .navbar-dark .navbar-nav .show > .nav-link,
 .navbar-dark .navbar-nav .nav-link.active {
-  color: #fff;
+  color: #ee582e;
   background: transparent!important;
 }
 .navbar-dark .navbar-toggler {

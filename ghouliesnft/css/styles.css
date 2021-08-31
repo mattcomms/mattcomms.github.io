@@ -132,7 +132,8 @@ body {
   #book {
     padding: 20px;
     z-index: 2;
-    position: relative; } }
+    position: relative;
+    text-align: center; } }
 
 #book .row {
   -webkit-box-align: center;
@@ -161,10 +162,19 @@ body {
 
 #faqs {
   padding: 100px 0; }
+  @media (max-width: 575px) {
+    #faqs {
+      padding: 50px 0 20px; } }
+  @media (max-width: 575px) {
+    #faqs h2 {
+      text-align: center; } }
 
 footer {
-  padding: 100px 0;
+  margin-top: 100px;
+  padding: 50px 0 100px;
   background: #000; }
+  footer .footer-logo img {
+    max-width: 108px; }
   footer a {
     color: #fff;
     text-decoration: underline; }
@@ -174,7 +184,8 @@ footer {
     display: block; }
   footer .nav-item {
     display: inline-block;
-    margin: 20px; }
+    margin: 20px;
+    border: none !important; }
     footer .nav-item a {
       font-size: 30px; }
 
@@ -208,17 +219,20 @@ footer {
 #mausoleum {
   background: url("../images/mausoleum.jpg") no-repeat center center;
   background-size: cover;
-  padding: 150px 0;
+  padding: 120px 0;
   position: relative;
   overflow: hidden; }
-  @media (min-width: 767px) {
+  @media (min-width: 1515px) {
     #mausoleum {
       background-position: left center;
       background-size: 50%; } }
+  @media (max-width: 1515px) {
+    #mausoleum {
+      text-shadow: 1px 1px 20px #000; } }
   @media (max-width: 575px) {
     #mausoleum {
-      text-shadow: 1px 1px 20px #000;
-      padding: 50px 0; } }
+      padding: 50px 0;
+      text-align: center; } }
   #mausoleum .inner {
     position: relative;
     z-index: 2; }
@@ -233,9 +247,9 @@ footer {
     width: 100% !important;
     height: 100vh !important;
     border: none !important;
-    opacity: .6;
+    opacity: .8;
     background: #231f20; }
-    @media (min-width: 575px) {
+    @media (min-width: 1515px) {
       #mausoleum:before {
         opacity: 1;
         width: 50% !important;
@@ -262,6 +276,9 @@ footer {
 
 #mint {
   padding: 100px 0; }
+  @media (max-width: 575px) {
+    #mint {
+      padding: 20px 0; } }
 
 .nav {
   display: -webkit-box;
@@ -403,10 +420,16 @@ footer {
   margin-top: 0; }
   @media (max-width: 991px) {
     .navbar-nav {
-      text-align: center; } }
+      text-align: center;
+      display: block; } }
   @media (max-width: 991px) {
-    .navbar-nav .nav-item {
-      border-bottom: 1px solid rgba(255, 255, 255, 0.1); } }
+    .navbar-nav .nav-item.nav-icon {
+      display: inline-block;
+      margin: 20px;
+      border: none !important; } }
+  @media (max-width: 991px) {
+    .navbar-nav .nav-item.nav-btn {
+      border: none !important; } }
 
 .navbar-nav .nav-link {
   padding-right: 0;
@@ -891,7 +914,7 @@ footer {
 
 .navbar-dark .navbar-nav .show > .nav-link,
 .navbar-dark .navbar-nav .nav-link.active {
-  color: #fff;
+  color: #ee582e;
   background: transparent !important; }
 
 .navbar-dark .navbar-toggler {
@@ -951,11 +974,13 @@ footer {
       margin-top: -100px;
       position: relative;
       z-index: 1;
-      padding: 0 20px; } }
+      padding: 0 20px;
+      text-align: center; } }
   #numerous-ghouls .row {
     -webkit-box-align: end;
         -ms-flex-align: end;
-            align-items: flex-end; }
+            align-items: flex-end;
+    padding: 0 40px; }
   #numerous-ghouls .large-text {
     padding: 100px 0 30px; }
 
@@ -1032,8 +1057,21 @@ footer {
   -webkit-animation: fadein -.5s 2s;
           animation: fadein -.5s 2s; }
 
+@media (max-width: 860px) and (min-width: 575px) {
+  .ghoulies-list .ghoul--1 {
+    width: 100% !important; } }
+
+@media (max-width: 860px) and (min-width: 575px) {
+  .ghoulies-list .ghoul--2,
+  .ghoulies-list .ghoul--3 {
+    display: none !important; } }
+
 #project {
   padding: 100px 0; }
+  @media (max-width: 575px) {
+    #project {
+      padding: 50px 0;
+      text-align: center; } }
 
 .youtube-container {
   position: relative;
@@ -1057,6 +1095,9 @@ footer {
 
 #roadmap {
   padding: 100px 0; }
+  @media (max-width: 575px) {
+    #roadmap {
+      padding: 20px 0; } }
   #roadmap .inner > .row {
     margin: 0 auto;
     width: 100%;
@@ -1078,7 +1119,8 @@ footer {
     .roadmap--item {
       display: inline-block;
       max-width: 72%;
-      vertical-align: text-top; } }
+      vertical-align: text-top;
+      margin-bottom: 20px; } }
   .large-text .roadmap--item p,
   .roadmap--item p {
     line-height: 2.5rem; }
@@ -1098,7 +1140,8 @@ footer {
   border-radius: 20px; }
   @media (max-width: 575px) {
     .roadmap--image img {
-      max-width: 90%; } }
+      max-width: 90%;
+      margin-bottom: 20px; } }
 
 @media (max-width: 575px) {
   .roadmap--image {
@@ -1110,10 +1153,17 @@ footer {
   padding: 100px 0; }
   @media (max-width: 575px) {
     #specs {
-      padding: 50px 20px; } }
+      padding: 0 20px 50px;
+      text-align: center; } }
+  @media (max-width: 575px) {
+    #specs .row {
+      padding: 0; } }
   #specs .specs--images {
     background: url("../images/specs-bg.png") no-repeat center center;
     background-size: 100%; }
+    @media (max-width: 575px) {
+      #specs .specs--images img {
+        width: 80%; } }
   @media (min-width: 575px) {
     #specs .floater {
       -webkit-transform: translatey(0px);
@@ -1123,6 +1173,9 @@ footer {
 
 #team {
   padding: 100px 0; }
+  @media (max-width: 575px) {
+    #team {
+      padding: 55px 0 20px; } }
   #team .inner .row {
     margin: 0 auto;
     width: 100%;
@@ -1180,6 +1233,11 @@ footer {
 .founder--links {
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out; }
+  @media (max-width: 575px) {
+    .founder--links {
+      max-width: 220px;
+      display: block;
+      margin: 0 auto; } }
   .founder--links:hover {
     cursor: pointer; }
     .founder--links:hover .founder--image {

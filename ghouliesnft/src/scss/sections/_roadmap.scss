@@ -1,5 +1,8 @@
 #roadmap {
   padding: 100px 0;
+  @media (max-width: 575px) {
+    padding: 20px 0;
+  }
   .inner > .row {
     margin: 0 auto;
     width:100%;
@@ -27,6 +30,7 @@
     display: inline-block;
     max-width: 72%;
     vertical-align: text-top;
+    margin-bottom: 20px;
   }
 
   p {
@@ -50,6 +54,7 @@
     border-radius: 20px;
     @media (max-width: 575px) {
       max-width: 90%;
+      margin-bottom: 20px;
     }
   }
   @media (max-width: 575px) {

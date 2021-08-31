@@ -1,15 +1,18 @@
 #mausoleum {
   background: url('../images/mausoleum.jpg') no-repeat center center;
   background-size: cover;
-  @media (min-width: 767px) {
+  @media (min-width: 1515px) {
     background-position: left center;
     background-size: 50%;
   }
-  @media (max-width: 575px) {
+  @media (max-width: 1515px) {
     text-shadow: 1px 1px 20px #000;
-    padding: 50px 0;
   }
-  padding: 150px 0;
+  @media (max-width: 575px) {
+    padding: 50px 0;
+    text-align: center;
+  }
+  padding: 120px 0;
   .inner {
     position: relative;
     z-index: 2;
@@ -26,9 +29,9 @@
     width: 100% !important;
     height: 100vh !important;
     border: none !important;
-    opacity: .6;
+    opacity: .8;
     background: rgb(35,31,32);
-    @media (min-width: 575px) {
+    @media (min-width: 1515px) {
       opacity: 1;
       width: 50% !important;
       background: black;

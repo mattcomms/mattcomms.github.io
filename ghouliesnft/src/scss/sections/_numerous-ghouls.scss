@@ -9,9 +9,11 @@
     position: relative;
     z-index: 1;
     padding: 0 20px;
+    text-align: center;
   }
   .row {
     align-items: flex-end;
+    padding: 0 40px;
   }
   .large-text {
     padding: 100px 0 30px;
@@ -55,5 +57,17 @@
   }
   .ghoul--3 {
     animation:fadein -.5s 2s;
+  }
+
+  .ghoul--1 {
+    @media (max-width:860px) and (min-width:575px) {
+      width: 100%!important;
+    }
+  }
+  .ghoul--2,
+  .ghoul--3 {
+    @media (max-width:860px) and (min-width:575px) {
+      display: none!important;
+    }
   }
 }
