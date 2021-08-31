@@ -1,9 +1,32 @@
 #header {
+  nav {
+    background: #151515;
+  }
   #logo {
     max-width: 300px;
     padding: 20px;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     display: block;
+    -moz-transition: all 2s ease-out, -moz-transform 2s ease-out;
+    -webkit-transition: all 2s ease-out, -webkit-transform 2s ease-out;
+    -ms-transition: all 2s ease-out, -ms-transform 2s ease-out;
+    transition: all 2s ease-out, transform 2s ease-out;
+  }
+  #small-logo {
+    -moz-transition: all 1s ease-out, -moz-transform 2s ease-out;
+    -webkit-transition: all 1s ease-out, -webkit-transform 2s ease-out;
+    -ms-transition: all 1s ease-out, -ms-transform 2s ease-out;
+    transition: all 1s ease-out, transform 2s ease-out;
+
+    width: 250px;
+    @media (max-width: 991px) {
+      width: 100px;
+    }
+  }
+  &.small {
+    #small-logo {
+        width: 100px;
+    }
   }
 }

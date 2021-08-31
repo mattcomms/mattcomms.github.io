@@ -31,7 +31,6 @@ body {
   line-height: 150%;
   color: #fff;
   font-size: 1rem;
-  background: #231F20;
 }
 
 p {
@@ -160,7 +159,7 @@ a {
   color: $red;
   text-decoration: none;
   &:hover {
-    color: darken($red, 15%)!important;
+    color: #ee582e !important;
   }
 }
 hr {

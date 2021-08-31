@@ -1,11 +1,17 @@
 
 #specs {
+  @media (max-width: 575px) {
+    padding: 20px;
+  }
   .specs--images {
     background: url('../images/specs-bg.png') no-repeat center center;
-    background-size: cover;
+    background-size: 100%;
   }
   .floater {
-    transform: translatey(0px);
-    animation: float 6s ease-in-out infinite;
+    @media (min-width: 575px) {
+      transform: translatey(0px);
+      animation: float 6s ease-in-out infinite;
+    }
+
   }
 }

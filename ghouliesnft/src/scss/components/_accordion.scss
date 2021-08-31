@@ -7,8 +7,9 @@
   color: #fff;
   background: #231F20;
   border-bottom: 1px solid #fff;
+  position: relative;
   cursor: pointer;
-  padding: 28px 18px;
+  padding: 28px 48px 28px 18px;
   width: 100%;
   text-align: left;
   border: none;
@@ -16,6 +17,11 @@
   transition: 0.4s;
   font-size: $h4-size;
   display: block;
+  @media (max-width: 575px) {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+
   &:hover {
     color: #ee582e!important;
     background: #231F20!important;
@@ -28,6 +34,10 @@
     float: right;
     margin-left: 5px;
     color: #783187!important;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    margin-top: -13px;
   }
   &.active:after {
     content: "\2796";
@@ -35,7 +45,7 @@
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active {
+.accordion.active {
   color: #fff;
   background: #231F20!important;
 }

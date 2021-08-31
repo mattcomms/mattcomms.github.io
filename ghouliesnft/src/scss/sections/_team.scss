@@ -1,3 +1,27 @@
+#team .inner .row {
+  margin: 0 auto;
+  width:100%;
+  box-sizing: border-box;
+  @media (max-width: 575px) {
+    display: block;
+  }
+  .revealer {
+    @media (max-width: 575px) {
+      opacity: 1!important;
+      -moz-transform: translateY(0rem)!important;
+      -webkit-transform: translateY(0rem)!important;
+      -ms-transform: translateY(0rem)!important;
+      transform: translateY(0rem)!important;
+      -moz-transform: translateX(0rem)!important;
+      -webkit-transform: translateX(0rem)!important;
+      -ms-transform: translateX(0rem)!important;
+      transform: translateX(0rem)!important;
+    }
+  }
+}
+
+
+
 .large-text .founder--item,
 .founder--item {
   margin-bottom: 60px;
@@ -12,6 +36,7 @@
 }
 .founder--items {
   margin-top: 40px;
+  align-items: flex-end;
 }
 .project--title {
   font-style: italic;
@@ -45,4 +70,9 @@
       background: rgb(46,238,128);
     }
   }
+}
+
+.team--additions {
+  max-width: 70%;
+  margin: auto;
 }

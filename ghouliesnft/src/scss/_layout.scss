@@ -1,6 +1,15 @@
+html,
+body {
+  background: #231F20;
+}
 body {
   margin: 0;
 }
+
+#page-top {
+  overflow: hidden;
+}
+
 .au-grid {
   .container {
     width: 100%;

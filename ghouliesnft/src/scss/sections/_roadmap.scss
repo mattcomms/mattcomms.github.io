@@ -1,15 +1,57 @@
 .large-text .roadmap--item,
 .roadmap--item {
   margin-bottom: 60px;
+  @media (max-width: 575px) {
+    display: inline-block;
+    max-width: 72%;
+    vertical-align: text-top;
+  }
+
   p {
     line-height: 2.5rem;
+    @media (max-width: 575px) {
+      line-height:1.5rem;
+    }
+    &:first-child {
+      @media (max-width: 575px) {
+        margin-top: 0;
+      }
+    }
   }
 }
 .roadmap--items {
   margin-top: 40px;
+
 }
 .roadmap--image {
   img {
     border-radius: 20px;
+    @media (max-width: 575px) {
+      max-width: 90%;
+    }
+  }
+  @media (max-width: 575px) {
+    vertical-align: text-top;
+    display: inline-block;
+    max-width: 25%;
+  }
+}
+
+#roadmap .inner > .row {
+  margin: 0 auto;
+  width:100%;
+  box-sizing: border-box;
+  .revealer {
+    @media (max-width: 575px) {
+      opacity: 1!important;
+      -moz-transform: translateY(0rem)!important;
+      -webkit-transform: translateY(0rem)!important;
+      -ms-transform: translateY(0rem)!important;
+      transform: translateY(0rem)!important;
+      -moz-transform: translateX(0rem)!important;
+      -webkit-transform: translateX(0rem)!important;
+      -ms-transform: translateX(0rem)!important;
+      transform: translateX(0rem)!important;
+    }
   }
 }

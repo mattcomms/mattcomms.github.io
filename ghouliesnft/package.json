@@ -25,5 +25,8 @@
     "gulp-uglify": "^3.0.0",
     "jshint": "^2.10.2",
     "kss": "^3.0.1"
+  },
+  "dependencies": {
+    "startbootstrap-scrolling-nav": "^5.0.3"
   }
 }
