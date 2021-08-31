@@ -10,9 +10,11 @@
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
-  color: #0d6efd;
+  color: #fff;
   text-decoration: none;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  font-size: 1.1rem;
+  text-transform: uppercase;
 }
 @media (prefers-reduced-motion: reduce) {
   .nav-link {
@@ -99,6 +101,7 @@
   flex-wrap: inherit;
   align-items: center;
   justify-content: space-between;
+  max-width: 100%;
 }
 .navbar-brand {
   padding-top: 0.3125rem;
@@ -115,10 +118,22 @@
   margin-bottom: 0;
   list-style: none;
   margin-top: 0;
+  @media (max-width: 991px) {
+    text-align: center;
+  }
+  .nav-item {
+    @media (max-width: 991px) {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+  }
 }
 .navbar-nav .nav-link {
   padding-right: 0;
   padding-left: 0;
+  @media (max-width: 991px) {
+    padding: 20px 0;
+  }
+
 }
 .navbar-nav .dropdown-menu {
   position: static;
@@ -286,13 +301,14 @@
   }
   .navbar-expand-lg .navbar-nav {
     flex-direction: row;
+    align-items: center;
   }
   .navbar-expand-lg .navbar-nav .dropdown-menu {
     position: absolute;
   }
   .navbar-expand-lg .navbar-nav .nav-link {
-    padding-right: 0.5rem;
-    padding-left: 0.5rem;
+    padding-right: 0.75rem;
+    padding-left: 0.75rem;
   }
   .navbar-expand-lg .navbar-nav-scroll {
     overflow: visible;
@@ -537,12 +553,15 @@
 .navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
   color: #ee582e;
 }
+ .navbar-dark .navbar-nav .nav-link.btn:focus {
+   color: #fff!important;
+ }
 .navbar-dark .navbar-nav .nav-link.disabled {
   color: rgba(255, 255, 255, 0.25);
 }
 .navbar-dark .navbar-nav .show > .nav-link,
 .navbar-dark .navbar-nav .nav-link.active {
-  color: #ee582e;
+  color: #fff;
   background: transparent!important;
 }
 .navbar-dark .navbar-toggler {

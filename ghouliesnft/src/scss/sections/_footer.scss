@@ -1,0 +1,21 @@
+footer {
+  padding: 100px 0;
+  background: #000;
+   a {
+     color: #fff;
+     text-decoration: underline;
+     &:hover {
+       color: #ee582e;
+     }
+   }
+  .navbar-nav {
+    display: block;
+  }
+  .nav-item {
+    display: inline-block;
+    margin: 20px;
+    a {
+      font-size: 30px;
+    }
+  }
+}

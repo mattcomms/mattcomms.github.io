@@ -1,21 +1,24 @@
-#team .inner .row {
-  margin: 0 auto;
-  width:100%;
-  box-sizing: border-box;
-  @media (max-width: 575px) {
-    display: block;
-  }
-  .revealer {
+#team {
+  padding: 100px 0;
+  .inner .row {
+    margin: 0 auto;
+    width:100%;
+    box-sizing: border-box;
     @media (max-width: 575px) {
-      opacity: 1!important;
-      -moz-transform: translateY(0rem)!important;
-      -webkit-transform: translateY(0rem)!important;
-      -ms-transform: translateY(0rem)!important;
-      transform: translateY(0rem)!important;
-      -moz-transform: translateX(0rem)!important;
-      -webkit-transform: translateX(0rem)!important;
-      -ms-transform: translateX(0rem)!important;
-      transform: translateX(0rem)!important;
+      display: block;
+    }
+    .revealer {
+      @media (max-width: 575px) {
+        opacity: 1!important;
+        -moz-transform: translateY(0rem)!important;
+        -webkit-transform: translateY(0rem)!important;
+        -ms-transform: translateY(0rem)!important;
+        transform: translateY(0rem)!important;
+        -moz-transform: translateX(0rem)!important;
+        -webkit-transform: translateX(0rem)!important;
+        -ms-transform: translateX(0rem)!important;
+        transform: translateX(0rem)!important;
+      }
     }
   }
 }

@@ -1,7 +1,8 @@
 
 #specs {
+  padding: 100px 0;
   @media (max-width: 575px) {
-    padding: 20px;
+    padding: 50px 20px;
   }
   .specs--images {
     background: url('../images/specs-bg.png') no-repeat center center;
