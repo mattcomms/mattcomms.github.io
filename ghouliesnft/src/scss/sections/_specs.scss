@@ -1,0 +1,29 @@
+
+#specs {
+  padding: 100px 0;
+  @media (max-width: 575px) {
+    padding: 0 20px 50px;
+    text-align: center;
+  }
+  .row {
+    @media (max-width: 575px) {
+      padding: 0;
+    }
+  }
+  .specs--images {
+    background: url('../images/specs-bg.png') no-repeat center center;
+    background-size: 100%;
+    img {
+      @media (max-width: 575px) {
+        width: 80%;
+      }
+    }
+  }
+  .floater {
+    @media (min-width: 575px) {
+      transform: translatey(0px);
+      animation: float 6s ease-in-out infinite;
+    }
+
+  }
+}

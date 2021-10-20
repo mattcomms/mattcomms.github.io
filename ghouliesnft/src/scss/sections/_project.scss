@@ -1,0 +1,30 @@
+#project {
+  padding: 100px 0;
+  @media (max-width: 575px) {
+    padding: 50px 0;
+    text-align: center;
+  }
+
+}
+.youtube-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+}
+.youtube-border {
+  padding: 10px;
+  background: rgb(238,88,46);
+  background: -moz-linear-gradient(90deg, rgba(238,88,46,1) 0%, rgba(120,49,135,1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(238,88,46,1) 0%, rgba(120,49,135,1) 100%);
+  background: linear-gradient(90deg, rgba(238,88,46,1) 0%, rgba(120,49,135,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ee582e",endColorstr="#783187",GradientType=1);
+}

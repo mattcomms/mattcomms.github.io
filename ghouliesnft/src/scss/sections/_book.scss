@@ -1,0 +1,40 @@
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+
+#book {
+  @media (max-width: 575px) {
+    padding: 20px;
+    z-index: 2;
+    position: relative;
+		text-align: center;
+  }
+
+  .row {
+    align-items: center;
+    @media (max-width: 575px) {
+      flex-direction: column-reverse;
+    }
+  }
+  .ghoulies-book {
+    position: relative;
+    bottom: -100px;
+    opacity: 1!important;
+    transform: translatey(0px);
+  	animation: float 6s ease-in-out infinite;
+    @media (max-width: 575px) {
+      animation: none;
+      bottom: 0;
+    }
+  }
+}

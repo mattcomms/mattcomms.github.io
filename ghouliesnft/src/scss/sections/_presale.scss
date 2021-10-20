@@ -1,0 +1,88 @@
+/*Presale Page Content CSS*/
+.sale-col1{
+  text-align: left;
+}
+.sale-col2{
+  text-align: center;
+}
+.sale-col3{
+  text-align: right;
+}
+.decrement, .increment{
+  background-color: #010101;
+  border-radius: 100%;
+  padding: 10px 20px;
+  border: none;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+  transition: 0.5s;
+  box-shadow:0px 0px 15px 2px rgba(255, 255, 255, 0.5);
+}
+.decrement{
+  padding: 10px 25px;
+}
+.quantity-text, .quantity-value{
+  margin: 0;
+}
+.quantity-value{
+  font-size: 100px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: initial;
+  color: white;
+  -webkit-text-fill-color: initial;
+  -webkit-box-decoration-break: initial;
+  background-color: initial;
+  background-image: initial;
+  -webkit-background-clip: initial;
+}
+.decrement:hover, .increment:hover{
+  background-color: white;
+  color: #010101;
+}
+
+.wrap-buy-button{
+  padding: 50px 0 35px 0;
+}
+.buy-button{
+  background-color: #EE4444;
+  width: 100%;
+  border-radius: 50px;
+  border: none;
+  color: white;
+  font-size: 35px;
+  padding: 10px 0;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.buy-button:hover{
+  background-color: white;
+  color: #ee4444;
+  transform: scale(1.05);
+}
+
+@media (max-width: 575px) {
+  #specs .row {
+    padding: 0 20px;
+  }
+
+  #specs {
+    padding: 100px 0px;
+    text-align: left;
+  }
+}
+.wrap-buy-button p{
+  text-align: center;
+}
+.bar{
+  height: 30px;
+  border-radius: 50px;
+  background: linear-gradient(to right, #FFFFFF, #FFFFFF);
+}
+.bottom-value {
+  margin: 0;
+  color: #F97071;
+}
+.bottom-text {
+  margin-bottom: 0;
+}
