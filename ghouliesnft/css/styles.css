@@ -246,12 +246,13 @@ footer {
     -webkit-transform: translateY(-0.5rem);
     transform: translateY(-0.5rem);
     cursor: pointer; }
-    .claim-ghoulie:hover:before {
-      background: #ee582e;
-      background: -webkit-gradient(linear, left top, right top, from(#ee582e), to(#783187));
-      background: linear-gradient(90deg, #ee582e 0%, #783187 100%);
-      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ee582e",endColorstr="#783187",GradientType=1);
-      opacity: .6; }
+    @media (min-width: 576px) {
+      .claim-ghoulie:hover:before {
+        background: #ee582e;
+        background: -webkit-gradient(linear, left top, right top, from(#ee582e), to(#783187));
+        background: linear-gradient(90deg, #ee582e 0%, #783187 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ee582e",endColorstr="#783187",GradientType=1);
+        opacity: .6; } }
   .claim-ghoulie video {
     max-width: 100%;
     height: 100%; }
