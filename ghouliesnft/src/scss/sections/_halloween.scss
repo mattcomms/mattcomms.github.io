@@ -101,15 +101,27 @@
   }
 }
 
+.claim-description {
+  margin-top: 0;
+  font-size: 28px;
+  text-shadow: 0 0 13px #000;
+  line-height: 1.5;
+  max-width: 360px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .empty {
   @media (max-width: 767px) {
     display: none;
   }
 }
 
-#leather-face-claim {
-
-}
-#pumpking-claim {
-
+.buy-a-ghoulie {
+  margin-top: 100px!important;
+  .buy-btn {
+    text-transform: uppercase;
+    font-size: 28px;
+    display: inline-block;
+  }
 }
