@@ -13,6 +13,9 @@ body {
 #page-top {
   overflow: hidden; }
 
+.black-bg {
+  background: #000; }
+
 .au-grid .container {
   width: 100%;
   padding: 0; }
@@ -48,6 +51,8 @@ body {
   @media (max-width: 991px) {
     #banner {
       padding-top: 76px; } }
+  #banner .hero-video {
+    padding: 50px 0; }
 
 #hero {
   background: url("../images/hero.jpg") no-repeat center center;
@@ -160,11 +165,17 @@ body {
               animation: none;
       bottom: 0; } }
 
+#events {
+  padding: 100px 0; }
+  @media (max-width: 575px) {
+    #events {
+      padding: 60px 0 10px; } }
+
 #faqs {
   padding: 100px 0; }
   @media (max-width: 575px) {
     #faqs {
-      padding: 50px 0 20px; } }
+      padding: 60px 0 10px; } }
   @media (max-width: 575px) {
     #faqs h2 {
       text-align: center; } }
@@ -189,11 +200,7 @@ footer {
     footer .nav-item a {
       font-size: 30px; }
 
-#halloween {
-  background-color: #000000; }
-
 #halloween-background {
-  background-color: #000000;
   background-image: url("../images/halloween_background.png");
   background-repeat: repeat;
   background-position: center center;
@@ -217,45 +224,16 @@ footer {
   overflow: hidden;
   position: relative;
   top: 0;
-  background: #ee582e;
-  background: -webkit-gradient(linear, left top, right top, from(#ee582e), to(#783187));
-  background: linear-gradient(90deg, #ee582e 0%, #783187 100%);
   -webkit-box-shadow: 0 0 13px #000;
           box-shadow: 0 0 13px #000;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ee582e",endColorstr="#783187",GradientType=1);
   -webkit-transition: all .25s ease-out, -webkit-transform .25s ease-out;
   transition: all .25s ease-out, -webkit-transform .25s ease-out;
   transition: all .25s ease-out, transform .25s ease-out;
   transition: all .25s ease-out, transform .25s ease-out, -webkit-transform .25s ease-out; }
-  .claim-ghoulie:before {
-    content: " ";
-    -webkit-transition: all 1s ease-out, -webkit-transform 1s ease-out;
-    transition: all 1s ease-out, -webkit-transform 1s ease-out;
-    transition: all 1s ease-out, transform 1s ease-out;
-    transition: all 1s ease-out, transform 1s ease-out, -webkit-transform 1s ease-out;
-    background: transparent;
-    z-index: 1;
-    display: block;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    opacity: .0; }
-  .claim-ghoulie:hover {
-    -webkit-transform: translateY(-0.5rem);
-    transform: translateY(-0.5rem);
-    cursor: pointer; }
-    @media (min-width: 576px) {
-      .claim-ghoulie:hover:before {
-        background: #ee582e;
-        background: -webkit-gradient(linear, left top, right top, from(#ee582e), to(#783187));
-        background: linear-gradient(90deg, #ee582e 0%, #783187 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ee582e",endColorstr="#783187",GradientType=1);
-        opacity: .6; } }
   .claim-ghoulie video {
     max-width: 100%;
-    height: 100%; }
+    height: 100%;
+    display: block; }
   .claim-ghoulie span {
     z-index: 2;
     position: relative;
@@ -388,10 +366,10 @@ footer {
     font-size: 6.125rem; }
 
 #mint {
-  padding: 100px 0; }
+  padding: 100px 0 0; }
   @media (max-width: 575px) {
     #mint {
-      padding: 20px 0; } }
+      padding: 60px 0 10px; } }
 
 .nav {
   display: -webkit-box;
@@ -1294,11 +1272,18 @@ footer {
   background: linear-gradient(90deg, #ee582e 0%, #783187 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ee582e",endColorstr="#783187",GradientType=1); }
 
+.youtube-border-blue {
+  padding: 5px;
+  background: #ee582e;
+  background: -webkit-gradient(linear, left top, right top, from(#a259a9), to(#00afe6));
+  background: linear-gradient(90deg, #a259a9 0%, #00afe6 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#a259a9",endColorstr="#00afe6",GradientType=1); }
+
 #roadmap {
   padding: 100px 0; }
   @media (max-width: 575px) {
     #roadmap {
-      padding: 20px 0; } }
+      padding: 60px 0 10px; } }
   #roadmap .inner > .row {
     margin: 0 auto;
     width: 100%;
@@ -1320,35 +1305,61 @@ footer {
     .roadmap--item {
       display: inline-block;
       max-width: 72%;
-      vertical-align: text-top;
-      margin-bottom: 20px; } }
+      vertical-align: text-top; } }
   .large-text .roadmap--item p,
   .roadmap--item p {
-    line-height: 2.5rem; }
+    line-height: 2.1rem; }
     @media (max-width: 575px) {
       .large-text .roadmap--item p,
       .roadmap--item p {
-        line-height: 1.5rem; } }
+        line-height: 1.5rem;
+        font-size: 18px; } }
     @media (max-width: 575px) {
       .large-text .roadmap--item p:first-child,
       .roadmap--item p:first-child {
         margin-top: 0; } }
 
 .roadmap--items {
-  margin-top: 40px; }
+  margin-top: 40px;
+  font-size: 20px; }
+  @media (max-width: 575px) {
+    .roadmap--items {
+      margin-bottom: 40px; } }
 
 .roadmap--image img {
   border-radius: 20px; }
   @media (max-width: 575px) {
     .roadmap--image img {
       max-width: 90%;
-      margin-bottom: 20px; } }
+      margin-bottom: 20px;
+      position: relative;
+      top: -10px; } }
 
 @media (max-width: 575px) {
   .roadmap--image {
     vertical-align: text-top;
     display: inline-block;
     max-width: 25%; } }
+
+#milestones {
+  padding: 100px 0 50px; }
+  @media (max-width: 575px) {
+    #milestones {
+      padding: 60px 0 10px; } }
+
+span.number {
+  z-index: 2;
+  position: relative;
+  display: block;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 68px;
+  font-weight: 800;
+  margin-bottom: 15px; }
+  @media (max-width: 575px) {
+    span.number {
+      font-size: 48px;
+      margin-bottom: 15px; } }
 
 #specs {
   padding: 100px 0; }
@@ -9114,9 +9125,16 @@ h2 {
 
 h3 {
   font-size: 33px;
-  font-weight: normal;
+  font-weight: bold;
   margin-bottom: 25px;
-  line-height: 3.125rem; }
+  line-height: 3.125rem;
+  font-family: 'Bangers', cursive;
+  -webkit-text-fill-color: transparent;
+  -webkit-box-decoration-break: clone;
+  background-color: #383A59;
+  background-image: linear-gradient(43deg, #ee582e 0%, #783187 50%);
+  -webkit-background-clip: text;
+  background-clip: text; }
   h3 span {
     font-size: 15px;
     display: block;

@@ -122,9 +122,16 @@ h2 {
 }
 h3 {
   font-size: $h3-size;
-  font-weight: normal;
+  font-weight: bold;
   margin-bottom: 25px;
   line-height: 3.125rem;
+  font-family: 'Bangers', cursive;
+  -webkit-text-fill-color: transparent;
+  -webkit-box-decoration-break: clone;
+  background-color: #383A59;
+  background-image: linear-gradient(43deg, #ee582e 0%, #783187 50%);
+  -webkit-background-clip: text;
+  background-clip: text;
 
   span {
     font-size: $h5-size;

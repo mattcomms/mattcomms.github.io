@@ -1,7 +1,7 @@
 #roadmap {
   padding: 100px 0;
   @media (max-width: 575px) {
-    padding: 20px 0;
+    padding: 60px 0 10px;
   }
   .inner > .row {
     margin: 0 auto;
@@ -30,13 +30,13 @@
     display: inline-block;
     max-width: 72%;
     vertical-align: text-top;
-    margin-bottom: 20px;
   }
 
   p {
-    line-height: 2.5rem;
+    line-height: 2.1rem;
     @media (max-width: 575px) {
       line-height:1.5rem;
+      font-size: 18px;
     }
     &:first-child {
       @media (max-width: 575px) {
@@ -47,6 +47,10 @@
 }
 .roadmap--items {
   margin-top: 40px;
+  font-size: 20px;
+  @media (max-width: 575px) {
+    margin-bottom: 40px;
+  }
 
 }
 .roadmap--image {
@@ -55,6 +59,8 @@
     @media (max-width: 575px) {
       max-width: 90%;
       margin-bottom: 20px;
+      position: relative;
+      top: -10px;
     }
   }
   @media (max-width: 575px) {
@@ -62,4 +68,29 @@
     display: inline-block;
     max-width: 25%;
   }
+}
+
+
+// milestones
+#milestones {
+  padding: 100px 0 50px;
+  @media (max-width: 575px) {
+    padding: 60px 0 10px;
+  }
+
+}
+span.number {
+  z-index: 2;
+  position: relative;
+  display: block;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 68px;
+  font-weight: 800;
+  margin-bottom: 15px;
+  @media (max-width: 575px) {
+    font-size: 48px;
+    margin-bottom: 15px;
+  }
+
 }

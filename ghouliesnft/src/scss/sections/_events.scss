@@ -1,0 +1,6 @@
+#events {
+  padding: 100px 0;
+  @media (max-width: 575px) {
+    padding: 60px 0 10px;
+  }
+}

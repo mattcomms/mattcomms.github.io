@@ -1,9 +1,7 @@
 // Halloween
 #halloween {
-  background-color: #000000;
 }
 #halloween-background {
-  background-color: #000000;
   background-image: url('../images/halloween_background.png');
   background-repeat: repeat;
   background-position: center center;
@@ -27,53 +25,15 @@
   overflow: hidden;
   position: relative;
   top: 0;
-  background: #ee582e;
-  background: -webkit-gradient(linear, left top, right top, from(#ee582e), to(#783187));
-  background: linear-gradient(90deg, #ee582e 0%, #783187 100%);
   box-shadow: 0 0 13px #000;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ee582e",endColorstr="#783187",GradientType=1);
   -moz-transition: all .25s ease-out, -moz-transform .25s ease-out;
   -webkit-transition: all .25s ease-out, -webkit-transform .25s ease-out;
   -ms-transition: all .25s ease-out, -ms-transform .25s ease-out;
   transition: all .25s ease-out, transform .25s ease-out;
-  &:before {
-    content: " ";
-    -moz-transition: all 1s ease-out, -moz-transform 1s ease-out;
-    -webkit-transition: all 1s ease-out, -webkit-transform 1s ease-out;
-    -ms-transition: all 1s ease-out, -ms-transform 1s ease-out;
-    transition: all 1s ease-out, transform 1s ease-out;
-    background: transparent;
-    z-index: 1;
-    display: block;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    opacity: .0;
-  }
-  &:hover {
-    -moz-transform: translateY(-.5rem);
-    -webkit-transform: translateY(-.5rem);
-    -ms-transform: translateY(-.5rem);
-    transform: translateY(-.5rem);
-    cursor: pointer;
-    &:before {
-      @media (min-width: 576px) {
-        background: #ee582e;
-        background: -webkit-gradient(linear, left top, right top, from(#ee582e), to(#783187));
-        background: linear-gradient(90deg, #ee582e 0%, #783187 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ee582e",endColorstr="#783187",GradientType=1);
-        opacity: .6;
-      }
-
-    }
-  }
-  img {
-  }
   video {
     max-width: 100%;
     height: 100%;
+    display: block;
   }
   span {
     z-index: 2;
