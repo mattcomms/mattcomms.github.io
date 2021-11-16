@@ -51,7 +51,6 @@
   @media (max-width: 575px) {
     margin-bottom: 40px;
   }
-
 }
 .roadmap--image {
   img {
@@ -71,14 +70,6 @@
 }
 
 
-// milestones
-#milestones {
-  padding: 100px 0 50px;
-  @media (max-width: 575px) {
-    padding: 60px 0 10px;
-  }
-
-}
 span.number {
   z-index: 2;
   position: relative;
@@ -91,6 +82,14 @@ span.number {
   @media (max-width: 575px) {
     font-size: 48px;
     margin-bottom: 15px;
+  }
+}
+
+// milestones
+#milestones {
+  padding: 100px 0 50px;
+  @media (max-width: 575px) {
+    padding: 60px 0 10px;
   }
 
 }

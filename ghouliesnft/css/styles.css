@@ -1341,12 +1341,6 @@ footer {
     display: inline-block;
     max-width: 25%; } }
 
-#milestones {
-  padding: 100px 0 50px; }
-  @media (max-width: 575px) {
-    #milestones {
-      padding: 60px 0 10px; } }
-
 span.number {
   z-index: 2;
   position: relative;
@@ -1360,6 +1354,12 @@ span.number {
     span.number {
       font-size: 48px;
       margin-bottom: 15px; } }
+
+#milestones {
+  padding: 100px 0 50px; }
+  @media (max-width: 575px) {
+    #milestones {
+      padding: 60px 0 10px; } }
 
 #specs {
   padding: 100px 0; }
