@@ -9015,8 +9015,12 @@ img {
   position: absolute;
   width: 1px; }
 
+@font-face {
+  font-family: 'Wildbreath';
+  src: url("../fonts/wild-breath.otf") format("opentype"); }
+
 h1.display-text {
-  font-family: 'Bangers', cursive;
+  font-family: 'Wildbreath', cursive;
   color: #fff;
   line-height: 6rem;
   margin: 50px 0;
@@ -9066,7 +9070,8 @@ h1,
   color: #fff;
   margin-bottom: 28px;
   font-weight: 900;
-  line-height: 4.125rem; }
+  line-height: 4.125rem;
+  text-transform: uppercase; }
   @media (max-width: 599px) {
     h1,
     .h1 {
@@ -9082,13 +9087,14 @@ h2 {
   font-weight: normal;
   margin-bottom: 25px;
   line-height: 3.125rem;
-  font-family: 'Bangers', cursive;
+  font-family: 'Wildbreath', cursive;
   -webkit-text-fill-color: transparent;
   -webkit-box-decoration-break: clone;
   background-color: #383A59;
   background-image: linear-gradient(43deg, #ee582e 0%, #783187 50%);
   -webkit-background-clip: text;
-  background-clip: text; }
+  background-clip: text;
+  text-transform: uppercase; }
   h2.h2--section-title {
     font-size: 80px;
     margin-bottom: 55px;
@@ -9128,7 +9134,8 @@ h3 {
   font-weight: bold;
   margin-bottom: 25px;
   line-height: 3.125rem;
-  font-family: 'Bangers', cursive;
+  font-family: 'Wildbreath', cursive;
+  text-transform: uppercase;
   -webkit-text-fill-color: transparent;
   -webkit-box-decoration-break: clone;
   background-color: #383A59;
