@@ -4,16 +4,16 @@
 }
 
 // Quantity should be the same in HTML
-$quantity: 30;
+$quantity: 120;
 
 .firefly {
   position: fixed;
   left: 50%;
   top: 50%;
-  width: 1.4vw;
+  width: 0.4vw;
   height: 1.4vw;
   margin: -0.2vw 0 0 9.8vw;
-  animation: ease 200s alternate infinite;
+  animation: ease 100s alternate infinite;
   pointer-events: none;
   z-index: 1;
   &:before,
@@ -75,5 +75,14 @@ $quantity: 30;
   5% {
     opacity: 1;
     box-shadow: 0 0 2vw 0.4vw #00afe6;
+  }
+}
+
+@keyframes focus {
+  0%, 30%, 100% {
+    filter: blur(0);
+  }
+  5% {
+    filter: blur(5px);
   }
 }

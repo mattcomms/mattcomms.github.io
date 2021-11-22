@@ -3,9 +3,9 @@
   margin: 40px auto;
 }
 .accordion {
-  background-color: #eee;
+  background-color: transparent;
   color: #fff;
-  background: #231F20;
+  background: transparent;
   border-bottom: 1px solid #fff;
   position: relative;
   cursor: pointer;
@@ -24,13 +24,13 @@
 
   &:hover {
     color: #ee582e!important;
-    background: #231F20!important;
+    background: transparent!important;
     cursor: pointer;
   }
   &:after {
     content: '\02795';
     font-size: 25px;
-    background: #231F20!important;
+    background: transparent!important;
     float: right;
     margin-left: 5px;
     color: #783187!important;
@@ -47,13 +47,13 @@
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .accordion.active {
   color: #fff;
-  background: #231F20!important;
+  background: transparent!important;
 }
 
 
 .active:focus {
   color: #fff;
-  background: #231F20!important;
+  background: transparent!important;
 }
 
 /* Style the accordion panel. Note: hidden by default */
@@ -63,7 +63,7 @@
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
-  background: #231F20;
+  background: transparent;
   border-bottom: 1px solid #4e4e4e;
   p {
     font-size: 1.2em;
