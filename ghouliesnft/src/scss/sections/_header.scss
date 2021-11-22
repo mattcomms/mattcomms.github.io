@@ -28,5 +28,9 @@
     #small-logo {
         width: 100px;
     }
+    .row {
+      position: relative;
+      z-index: 3;
+    }
   }
 }
