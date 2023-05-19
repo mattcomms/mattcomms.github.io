@@ -3964,9 +3964,6 @@ body {
   font-family: 'Open Sans', sans-serif;
   image-rendering: -webkit-optimize-contrast; }
 
-.presentation .wrapper {
-  margin-top: 350px; }
-
 .wrapper {
   margin-top: 100px; }
   .wrapper#one {
@@ -3977,8 +3974,6 @@ body {
     margin: 30px auto; }
   .wrapper .row--wide {
     max-width: 1400px; }
-  .wrapper .fullwidth {
-    max-width: 100%; }
 
 .align--middle {
   -webkit-box-align: center;
@@ -3994,12 +3989,6 @@ footer {
   border-top: 1px solid #ccc;
   margin-top: 140px;
   padding-bottom: 140px; }
-
-.presentation .pres--hide {
-  display: none; }
-
-.presentation #two {
-  margin: 300px 0; }
 
 #two .row {
   -webkit-box-align: center;
@@ -4040,10 +4029,10 @@ img {
   opacity: 0;
   -webkit-transform: scale(1);
           transform: scale(1);
-  -webkit-transition: opacity 2s ease-out, -webkit-transform 2s ease-out;
-  transition: opacity 2s ease-out, -webkit-transform 2s ease-out;
-  transition: opacity 2s ease-out, transform 2s ease-out;
-  transition: opacity 2s ease-out, transform 2s ease-out, -webkit-transform 2s ease-out; }
+  -webkit-transition: opacity 1s ease-out, -webkit-transform 1s ease-out;
+  transition: opacity 1s ease-out, -webkit-transform 1s ease-out;
+  transition: opacity 1s ease-out, transform 1s ease-out;
+  transition: opacity 1s ease-out, transform 1s ease-out, -webkit-transform 1s ease-out; }
   .js .revealer.revealed {
     opacity: 1 !important;
     -webkit-transform: translateY(0rem) !important;
@@ -4068,8 +4057,8 @@ img {
 .js .revealer--enlarge {
   -webkit-transform: scale(0.5);
           transform: scale(0.5);
-  -webkit-transition: all 2s ease-in-out;
-  transition: all 2s ease-in-out; }
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out; }
 
 .js .revealer--fade {
   opacity: 0 !important; }
@@ -4093,10 +4082,10 @@ img {
   opacity: 0;
   -webkit-transform: scale(1);
           transform: scale(1);
-  -webkit-transition: opacity 2s ease-out, -webkit-transform 2s ease-out;
-  transition: opacity 2s ease-out, -webkit-transform 2s ease-out;
-  transition: opacity 2s ease-out, transform 2s ease-out;
-  transition: opacity 2s ease-out, transform 2s ease-out, -webkit-transform 2s ease-out; }
+  -webkit-transition: opacity 1s ease-out, -webkit-transform 1s ease-out;
+  transition: opacity 1s ease-out, -webkit-transform 1s ease-out;
+  transition: opacity 1s ease-out, transform 1s ease-out;
+  transition: opacity 1s ease-out, transform 1s ease-out, -webkit-transform 1s ease-out; }
   .js .revealer.revealed {
     opacity: 1 !important;
     -webkit-transform: translateY(0rem) !important;
@@ -4121,8 +4110,8 @@ img {
 .js .revealer--enlarge {
   -webkit-transform: scale(0.5);
           transform: scale(0.5);
-  -webkit-transition: all 2s ease-in-out;
-  transition: all 2s ease-in-out; }
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out; }
 
 .js .revealer--fade {
   opacity: 0 !important; }
